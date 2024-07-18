@@ -44,4 +44,4 @@ An interactive Excel dashboard was created to visualize key insights from the an
 
 ### The Dashboard
 
-![Dashboard](Dashboard.png) 
+https://github.com/maab-hussein/Bike-share-project/issues/1#issue-2417482403
