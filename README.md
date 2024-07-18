@@ -44,4 +44,4 @@ An interactive Excel dashboard was created to visualize key insights from the an
 
 ### The Dashboard
 
-![Dashboard](Dashboard.png)
+![Dashboard](Dashboard.png) 
