@@ -45,3 +45,18 @@ An interactive Excel dashboard was created to visualize key insights from the an
 ### The Dashboard
 
 ![Dashboard](https://github.com/user-attachments/assets/8bceca2e-e249-4cce-8b8c-a2a5ff71fba4)
+
+### Key Features of the Dashboard
+
+- **Interactive Charts**:
+  - A slicers are used to filter data by different categories. In the bar chart and the line chart slicers were used to analyze bikers' behaviors based on membership type.
+  - Another slicer was used to filter data based on months.
+
+- **Summary Statistics**:
+  - Key metrics such as churn rate, average tenure, and monthly charges are displayed prominently.
+
+- **Trend Analysis**:
+  - Heatmap shows riders' density throughout months. During the months of June, July and August numbers of bikers increase noticeably.
+  - The bar chart shows the number of riders during each day of the week for each membership type. Casual members tend to bike more on Saturdays and Sundays.
+  - The line chart shows when each membership type tends to bike in days' hours. There is an obvious increase in 5 a.m and 5 p.m for members.
+  - The pie chart shows the percentage of each membership for every month. It shows that the percentage of members is already increasing.
