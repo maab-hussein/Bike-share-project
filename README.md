@@ -50,9 +50,9 @@ Additionally, I conducted initial data exploration using Excel features like Piv
 An interactive Excel dashboard was created to visualize key insights from the analysis.
 
 ## Steps to Access the Dashboard
-1. **Download the Excel File**: [Bike-share dashboard.xlsx](https://1drv.ms/f/c/1c14129f07a236b3/EnDMZWSGyK5MmhGCLFtdzc4BhbyHUVj5mAYlc0klYgUVXQ)
-2. **Open the Excel File using Microsoft Excel.**
-2. **Navigate to the Dashboard Sheet**
+1. Download the Excel File: [Bike-share dashboard.xlsx](https://1drv.ms/f/c/1c14129f07a236b3/EnDMZWSGyK5MmhGCLFtdzc4BhbyHUVj5mAYlc0klYgUVXQ)
+2. Open the Excel File using Microsoft Excel.
+2. Navigate to the Dashboard Sheet
 
 
 ![Dashboard](https://github.com/user-attachments/assets/915d1cd3-76cd-432a-b00f-efa8e55b5bd2)
@@ -83,6 +83,6 @@ An interactive Excel dashboard was created to visualize key insights from the an
 Based On the analysis, I recommend the following actions:
 
 - Include an extra membership, either a monthly membership or a seasonal membership, to allow some casual members to bike seasonally.
-- Built a system that collects data about the exact number of new members, converted members, and canceled members.
+- Build a system that collects data about the exact number of new members, converted members, and canceled members.
 - Collect more data about characteristics of each memberships users.
 - Use social media to influence the audience about the beneficiality and importance of biking.
