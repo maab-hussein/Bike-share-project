@@ -1,5 +1,16 @@
 # Cyclistic bike-share Analysis
 
+### Contents
+
+- [Project Overview](#project-overview)
+- [Data Sources](#data-sources)
+- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Interactive Excel Dashboard](#interactive-excel-dashboard)
+- [Key Features of the Dashboard](#key-features-of-the-dashboard)
+- [Analysis](#analysis)
+- [Recommendations](#recommendations)
+
 ### Project Overview
 
 - Cyclistic is a bike-share program that features more than 5,800 bicycles and 600 docking stations. There are two types of memberships. Customers who purchase annual memberships are Cyclistic members, and customers who purchase anything else are Cyclistic casuals.
@@ -12,6 +23,7 @@
 - [Cleaned, edited, and enhanced source in the power query.](https://1drv.ms/f/c/1c14129f07a236b3/EnDMZWSGyK5MmhGCLFtdzc4BhbyHUVj5mAYlc0klYgUVXQ)
 
 ### Data Cleaning and Preparation
+
 - **Data Importing and Loading:**
   - Used Excel’s “Get & Transform” (Power Query) feature to load and transform over 5.5 millions of rows.
 - **Removing Duplicates:**
@@ -42,7 +54,6 @@ An interactive Excel dashboard was created to visualize key insights from the an
 2. **Open the Excel File using Microsoft Excel.**
 2. **Navigate to the Dashboard Sheet**
 
-### The Dashboard
 
 ![Dashboard](https://github.com/user-attachments/assets/915d1cd3-76cd-432a-b00f-efa8e55b5bd2)
 
@@ -63,3 +74,14 @@ An interactive Excel dashboard was created to visualize key insights from the an
 - Building on the previous point, and since mere intuition can't play a role in making analytical insight, I conducted further investigation trying to figure out if anything specific took place to increase members' percentage. Usually, I would head to the marketing department and make an acquisition about any marketing strategy that might've taken place, if so, I would analyze it using A/B testing and figure out if it might be effective for further usage.
 - From analyzing two facts, that, clearly, more members tend to bike at 8 a.m. and at 5 p.m., and casuals tend to bike more on Saturdays and Sundays -the weekends-, it becomes obvious that, usually, members use bikes for commuting, and casuals use bikes for leisure, hobby, or sports.
 - I analyzed trends in the numbers and the percentages of each membership over months to notice if there is any sudden increase of subscriptions of a membership against a sudden drop in the other membership, that might indicate that the increase of subscriptions is due to members conversion from membership to another rather than new memberships, to conduct further analysis. To have a general idea I used a scatter plot to see if any point is far from the supposed correlation line. I also used `=CORREL` function, it was `0.92`; the positive correlation is strong. No significant increase and decrease has been spotted. After calculating the mean, standard deviation, and monthly change of each membership -using the formula `monthly change = (current month percentage - previous month percentage ) / previous month percentage`- I found a data point from the percentages of differences that has a z-score of 2.17 in casual membership, which is considered high-, but the corresponding data point from the member membership has a z-score of 1.17; nothing significant.
+ 
+  ![Per  of Diff](https://github.com/user-attachments/assets/441c596b-bff0-407b-a7a7-373ed832751f)
+
+
+### Recommendations
+
+Based On the analysis, I recommend the following actions:
+
+- Include an extra membership, either a monthly membership or a seasonal membership to fulfill some casual members' desires to bike for specific months.
+- Built a system that collects data about the exact number of new members, converted members, and canceled members.
+- 
