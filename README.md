@@ -9,7 +9,7 @@
 ### Data Sources
 
 - [The original data.](https://1drv.ms/f/c/1c14129f07a236b3/EnDMZWSGyK5MmhGCLFtdzc4BhbyHUVj5mAYlc0klYgUVXQ)
-- [Cleaned, edited and enhanced source in the power query.](https://1drv.ms/f/c/1c14129f07a236b3/EnDMZWSGyK5MmhGCLFtdzc4BhbyHUVj5mAYlc0klYgUVXQ)
+- [Cleaned, edited, and enhanced source in the power query.](https://1drv.ms/f/c/1c14129f07a236b3/EnDMZWSGyK5MmhGCLFtdzc4BhbyHUVj5mAYlc0klYgUVXQ)
 
 ### Data Cleaning and Preparation
 - **Data Importing and Loading:**
@@ -44,19 +44,22 @@ An interactive Excel dashboard was created to visualize key insights from the an
 
 ### The Dashboard
 
-![Dashboard](https://github.com/user-attachments/assets/8bceca2e-e249-4cce-8b8c-a2a5ff71fba4)
+![Dashboard](https://github.com/user-attachments/assets/915d1cd3-76cd-432a-b00f-efa8e55b5bd2)
 
 ### Key Features of the Dashboard
 
 - **Interactive Charts**:
-  - A slicers are used to filter data by different categories. In the bar chart and the line chart slicers were used to analyze bikers' behaviors based on membership type.
-  - Another slicer was used to filter data based on months.
-
-- **Summary Statistics**:
-  - Key metrics such as churn rate, average tenure, and monthly charges are displayed prominently.
+  - Slicers are used to filter data by different categories. In the bar chart and the line chart slicers are used to analyze bikers' behaviors based on membership type. Another slicer is used in the pie chart to filter data based on months.
 
 - **Trend Analysis**:
-  - Heatmap shows riders' density throughout months. During the months of June, July and August numbers of bikers increase noticeably.
-  - The bar chart shows the number of riders during each day of the week for each membership type. Casual members tend to bike more on Saturdays and Sundays.
-  - The line chart shows when each membership type tends to bike in days' hours. There is an obvious increase in 5 a.m and 5 p.m for members.
-  - The pie chart shows the percentage of each membership for every month. It shows that the percentage of members is already increasing.
+  - Heatmap shows riders' density throughout months. During the months of June, July, and August numbers of bikers increase noticeably.
+  - The bar chart shows the number of riders on each day of the week for each membership type. Casual members tend to bike more than usual on Saturdays and Sundays.
+  - The line chart shows when each membership type tends to bike in days' hours. There is an obvious increase in 8 a.m. and 5 p.m. for members.
+  - The pie chart shows the percentage of each membership for every month.
+ 
+### Analysis
+
+- After August, the percentage of members numbers started to increase after continuously decreasing from the beginning of the year. This can be interpreted in **two** possible ways. Firstly, since the realization that both memberships were more active between June to August, which is spring, we can assume that bikers became more willing to purchase a member membership after enjoying biking in spring. Secondly, it is not the percentage of members numbers that has increased, but rather the percentage of casual memberships number that has decreased, again, because spring was starting to end, which, in my opinion, sounds more convenient and sentimental.
+- Building on the previous point, and since mere intuition can't play a role in making analytical insight, I conducted further investigation trying to figure out if anything specific took place to increase members' percentage. Usually, I would head to the marketing department and make an acquisition about any marketing strategy that might've taken place, if so, I would analyze it using A/B testing and figure out if it might be effective for further usage.
+- From analyzing two facts, that, clearly, more members tend to bike at 8 a.m. and at 5 p.m., and casuals tend to bike more on Saturdays and Sundays -the weekends-, it becomes obvious that, usually, members use bikes for commuting, and casuals use bikes for leisure, hobby, or sports.
+- I analyzed trends in the numbers and the percentages of each membership over months to notice if there is any sudden increase of subscriptions of a membership against a sudden drop in the other membership, that might indicate that the increase of subscriptions is due to members conversion from membership to another rather than new memberships, to conduct further analysis. To have a general idea I used a scatter plot to see if any point is far from the supposed correlation line. I also used `=CORREL` function, it was `0.92`; the positive correlation is strong. No significant increase and decrease has been spotted. After calculating the mean, standard deviation, and monthly change of each membership -using the formula `monthly change = (current month percentage - previous month percentage ) / previous month percentage`- I found a data point from the percentages of differences that has a z-score of 2.17 in casual membership, which is considered high-, but the corresponding data point from the member membership has a z-score of 1.17; nothing significant.
